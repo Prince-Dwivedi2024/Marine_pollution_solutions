@@ -1,5 +1,5 @@
 
-##🌊 Overview
+🌊 Overview
 
 Marine Pollution Solutions is a full-stack platform designed to help simulate and manage greenhouse gas (GHG) compliance under the FuelEU Maritime Regulation (EU 2023/1805).
 
@@ -8,8 +8,7 @@ The application enables users to calculate, monitor, and compare compliance perf
 This project showcases a modular architecture with a clear separation between backend and frontend layers, following Clean (Hexagonal) Architecture design principles.
 ---
 
-##🎯 Purpose
-
+🎯 Purpose
 The goal is to create a lightweight yet structured Marine Pollution Compliance Management Platform that includes:
 
 Interactive dashboard for Routes, Comparison, Banking, and Pooling
@@ -36,8 +35,8 @@ graph TD
 
 ```
 
-##✨ Core Features
-###🛳️ Route Management
+✨ Core Features
+🛳️ Route Management
 
 Browse all available shipping routes
 
@@ -45,7 +44,7 @@ Filter routes by vessel type, fuel type, or year
 
 Choose a baseline route for emission comparison
 
-###📉 Comparison Module
+📉 Comparison Module
 
 Compare selected routes with the baseline
 
@@ -53,7 +52,7 @@ Display GHG intensity, percentage differences, and compliance status
 
 Visualize data using graphs and charts
 
-###💼 Banking (Article 20)
+💼 Banking (Article 20)
 
 Compute Compliance Balance (CB) for each vessel
 
@@ -63,7 +62,7 @@ Redeem or apply surplus to offset deficits
 
 Prevent invalid or unfair transactions
 
-###🤝 Pooling (Article 21)
+🤝 Pooling (Article 21)
 
 Create pools that share compliance balances among ships
 
@@ -71,8 +70,8 @@ Ensure equitable distribution and maintain total CB ≥ 0
 
 Prevent any ship from exiting a pool with a lower CB
 
-##⚙️ Technology Stack
-###💻 Frontend
+⚙️ Technology Stack
+💻 Frontend
 
 React.js + TypeScript + Vite
 
@@ -84,7 +83,7 @@ Chart.js / Recharts for analytics and visualization
 
 RESTful API integration
 
-###⚙️ Backend
+⚙️ Backend
 
 Node.js + Express + TypeScript
 
@@ -322,6 +321,7 @@ Optionally, maintain a CHANGELOG.md for development tracking
 
 **Prince Dwivedi**  
 ---
+
 
 
 
