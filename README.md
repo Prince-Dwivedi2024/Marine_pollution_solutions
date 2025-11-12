@@ -1,27 +1,28 @@
 
-## 🌟 Overview
+##🌊 Overview
 
-**FuelEU Maritime** is a full-stack compliance management platform developed to simulate and manage greenhouse gas (GHG) emission compliance under the **FuelEU Maritime Regulation (EU 2023/1805)**.
+Marine Pollution Solutions is a full-stack platform designed to help simulate and manage greenhouse gas (GHG) compliance under the FuelEU Maritime Regulation (EU 2023/1805).
 
-The platform allows users to view, compare, and compute compliance balances for maritime routes, and to simulate **banking** and **pooling** operations following EU regulatory standards.
+The application enables users to calculate, monitor, and compare compliance performance for various maritime routes. It also supports banking and pooling operations based on the latest EU sustainability standards.
 
-This project demonstrates strong architectural clarity, backend–frontend synchronization, and modular implementation using **Clean (Hexagonal) Architecture** principles.
-
+This project showcases a modular architecture with a clear separation between backend and frontend layers, following Clean (Hexagonal) Architecture design principles.
 ---
 
-## 🎯 Objective
+##🎯 Purpose
 
-To design and implement a minimal yet structured **FuelEU Maritime Compliance Platform** that includes:
+The goal is to create a lightweight yet structured Marine Pollution Compliance Management Platform that includes:
 
-- Frontend dashboard for **Routes**, **Compare**, **Banking**, and **Pooling** modules  
-- Backend APIs for managing routes, compliance balances, and financial logic  
-- Domain-driven, maintainable code with TypeScript, React, and Node.js
+Interactive dashboard for Routes, Comparison, Banking, and Pooling
+
+Backend APIs for route data, compliance computation, and balance adjustments
+
+A domain-driven codebase built using React, TypeScript, and Node.js
 
 ---
 
 ```mermaid
 graph TD
-    A[FuelEU Maritime Platform] --> B[Frontend Dashboard]
+    A[Marine Pollution Solutions Platform] --> B[Frontend Dashboard]
     A --> C[Backend Services]
     A --> D[Database Layer]
     B --> E[Routes Tab]
@@ -35,53 +36,72 @@ graph TD
 
 ```
 
-## ✨ Key Features
+##✨ Core Features
+###🛳️ Route Management
 
-### 🛣️ Routes Management
-- Display all available maritime routes  
-- Filter by **vessel type**, **fuel type**, and **year**  
-- Select and set a **baseline route** for emission comparisons  
+Browse all available shipping routes
 
-### 📊 Comparison Dashboard
-- Compare baseline vs other routes  
-- Display **GHG intensity**, **percent difference**, and **compliance status**  
-- Graphical visualization of baseline vs comparison values  
+Filter routes by vessel type, fuel type, or year
 
-### 💰 Banking System (Article 20)
-- Calculate **Compliance Balance (CB)** for each ship  
-- **Bank surplus** when emissions are below target  
-- **Apply** banked surplus to offset deficits  
-- Validation to prevent invalid transactions  
+Choose a baseline route for emission comparison
 
-### 🤝 Pooling System (Article 21)
-- Create pools where multiple ships share CBs  
-- Ensure no ship exits with a worse CB value  
-- Maintain fairness and total CB ≥ 0  
+###📉 Comparison Module
+
+Compare selected routes with the baseline
+
+Display GHG intensity, percentage differences, and compliance status
+
+Visualize data using graphs and charts
+
+###💼 Banking (Article 20)
+
+Compute Compliance Balance (CB) for each vessel
+
+Bank surplus when emissions are below the target
+
+Redeem or apply surplus to offset deficits
+
+Prevent invalid or unfair transactions
+
+###🤝 Pooling (Article 21)
+
+Create pools that share compliance balances among ships
+
+Ensure equitable distribution and maintain total CB ≥ 0
+
+Prevent any ship from exiting a pool with a lower CB
+
+##⚙️ Technology Stack
+###💻 Frontend
+
+React.js + TypeScript + Vite
+
+Tailwind CSS for styling
+
+Context API for global state management
+
+Chart.js / Recharts for analytics and visualization
+
+RESTful API integration
+
+###⚙️ Backend
+
+Node.js + Express + TypeScript
+
+PostgreSQL database with Prisma ORM
+
+Follows Hexagonal Architecture for scalability
+
+Jest and Supertest for testing
+
+ESLint + Prettier for clean and consistent code  
 
 ---
 
-## ⚙️ Technology Stack
-
-### 🖥️ Frontend
-- React.js + TypeScript + Vite  
-- Tailwind CSS (for modern UI design)  
-- Context API for state management  
-- Chart.js / Recharts for data visualization  
-- RESTful API integration  
-
-### 🧩 Backend
-- Node.js + Express + TypeScript  
-- PostgreSQL with **Prisma ORM**  
-- Hexagonal (Ports & Adapters) architecture  
-- Jest & Supertest for testing  
-- ESLint + Prettier for clean code  
-
----
-
-## 🧱 Project Architecture
+### 🧱 Project Architecture
 
 ```text
-shahab-16-fueleu_compliance_platform/
+
 │
 ├── README.md
 ├── AGENT_WORKFLOW.md
@@ -175,9 +195,8 @@ CB = (Target - Actual) × (Fuel Consumption × 41,000 MJ/t)
 
 ---
 
-## 🌐 API Endpoints
-
-### 🚢 Routes
+## 🌐 API Summary
+###🚢 Routes
 | Endpoint | Method | Description |
 |---|---:|---|
 | `/routes` | GET | Fetch all routes |
@@ -308,4 +327,5 @@ Full-Stack Developer
 GitHub: https://github.com/Shahab-16
 
 ---
+
 
