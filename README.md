@@ -249,8 +249,8 @@ CB = (Target - Actual) × (Fuel Consumption × 41,000 MJ/t)
 
 ### Clone Repository
 ```bash
-git clone https://github.com/yourusername/shahab-16-fueleu_compliance_platform.git
-cd shahab-16-fueleu_compliance_platform
+git clone https://github.com/Prince-Dwivedi2024/Marine_pollution_solutions.git
+cd Marine_pollution_solutions
 ```
 
 ### Backend Setup
@@ -258,8 +258,9 @@ cd shahab-16-fueleu_compliance_platform
 ```bash
 cd backend
 npm install
-cp .env.example .env     # Add PostgreSQL credentials
+cp .env.example .env    # Add PostgreSQL credentials
 npm run dev
+
 ```
 
 
@@ -268,6 +269,7 @@ npm run dev
 cd ../frontend
 npm install
 npm run dev
+
 ```
 
 ## Run Tests
@@ -278,7 +280,7 @@ npm run test
 
 ---
 
-## 🧭 Evaluation Criteria
+## 🧭 Evaluation Focus
 
 | Area | Focus |
 |---|---|
@@ -291,41 +293,35 @@ npm run test
 
 ---
 
-## 📘 Reference
+## 📘 References
 
-This project follows principles and calculation methods inspired by:
+This project follows the methodology outlined in:
 
-- **FuelEU Maritime Regulation (EU) 2023/1805**, particularly **Annex IV** and **Articles 20–21**.
-- Core calculation:  
-  `CB = (Target - Actual) × (Fuel Consumption × 41,000 MJ/t)`  
-  where **Target (2025)** = `89.3368 gCO₂e/MJ`.
+FuelEU Maritime Regulation (EU) 2023/1805, focusing on Annex IV and Articles 20–21
 
-For formal regulatory details consult the official EU legislation and technical guidance documents.
+Main computation:
+CB = (Target - Actual) × (Fuel Consumption × 41,000 MJ/t)
 
+Refer to official EU documents for detailed compliance rules.
 ---
 
-## 📝 Notes & Next Steps (suggested)
+## 📝 Future Enhancements
 
-- Add seed data to `prisma/seed.js` using the sample dataset provided above.  
-- Implement unit tests for `computeCB`, `createPool`, and banking flows.  
-- Harden API validation (request schemas, error handling).  
-- Add sample Postman collection or curl examples for quick API verification.  
-- Optionally add a short `CHANGELOG.md` for project progress tracking.
+Add seed data in prisma/seed.js
 
----
+Extend test coverage for computeCB, createPool, and banking logic
 
-## 🧾 License
+Improve API schema validation
 
-This repository is provided for demonstration/assignment purposes. Add a license suitable for your use (e.g., `MIT`) in a `LICENSE` file if you plan to share publicly.
+Add a sample Postman collection for testing
 
+Optionally, maintain a CHANGELOG.md for development tracking
 ---
 
 ## 👨‍💻 Author
 
-**MD Shahab Uddin**  
-Full-Stack Developer  
-GitHub: https://github.com/Shahab-16
-
+**Prince Dwivedi**  
 ---
+
 
 
