@@ -1,6 +1,6 @@
 # REFLECTION.md
 
-## 🧠 Reflection on the FuelEU Maritime Full-Stack Project
+## 🧠 Reflection on the Marine_pollution_solutions Full-Stack Project
 
 ### 🌍 Overview
 This project was designed to simulate EU maritime compliance workflows and explore the intersection of **AI-assisted development**, **clean architecture**, and **domain-driven design** principles.
@@ -56,4 +56,4 @@ This made testing and reasoning about code straightforward.
 ### ✅ Conclusion
 AI-assisted full-stack development allowed me to balance speed, structure, and reliability. Human oversight remained essential, but AI dramatically improved development flow, documentation quality, and time efficiency.
 
-**— MD Shahab Uddin**
+**— Prince Dwivedi**
